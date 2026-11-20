@@ -13,8 +13,7 @@ namespace DiscordChatExporter.Gui.Services;
 public partial class SettingsService()
     : SettingsBase(StartOptions.Current.SettingsPath, SettingsSerializerContext.Default)
 {
-    [ObservableProperty]
-    public partial bool IsUkraineSupportMessageEnabled { get; set; } = true;
+    public partial bool IsUkraineSupportMessageEnabled { get; set; } = false;
 
     [ObservableProperty]
     public partial ThemeVariant Theme { get; set; }
